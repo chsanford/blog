@@ -24,8 +24,8 @@ email: clayton@cs.columbia.edu
 description: >- # this means to ignore newlines until "baseurl:"
   Random thoughts about machine
   learning, algorithms, math, politics, living in New York, and more.
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "blog.chsanford.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://blog.claytonsanford.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: chsanford
 linkedin_username: claytonsanford
 
