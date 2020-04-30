@@ -2,6 +2,7 @@
 layout: post
 title: "Why Is Deep Learning Deep?"
 author: Clayton Sanford
+tags: learning-theory depth-separation research
 ---
 As a first year computer science PhD student, I've spent a lot of time exploring problems in learning theory, trying to figure out which research problems to work on. Learning theory as a field strives to understand mathematically why machine learning works by studying the computational and statistical abilities and limitations of ML algorithms. I am broadly interested in better understanding why deep learning works so well in practice. 
 
