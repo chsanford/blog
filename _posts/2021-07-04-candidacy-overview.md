@@ -5,7 +5,7 @@ author: Clayton Sanford
 tags: candidacy technical learning-theory over-parameterized
 ---
 
-_Hello, and welcome to the blog! I've been wanting to start this for awhile, and I've finally pulled the trigger. This is the introduction to a series of blog posts I'll be writing over the course of the summer and (possibly) early in the fall. I hope these posts are informative, and I welcome any feedback on their technical content and writing quality._
+_Hello, and welcome to the blog! I've been wanting to start this for awhile, and I've finally jumped in. This is the introduction to a series of blog posts I'll be writing over the course of the summer and (possibly) early in the fall. I hope these posts are informative, and I welcome any feedback on their technical content and writing quality._
 
 I've recently finished the second year of my computer science PhD program, in which I study the overlap between theoretical comptuer science and machine learning.
 Over the next few months, I'm going to read a lot of papers about machine learning models which have a much larger number of parameters than the number of samples.
