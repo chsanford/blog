@@ -60,18 +60,18 @@ $$\underbrace{\mathbb{E}_{(x, y) \sim \mathcal{D}}[\ell(f_\theta(x), y)]}_{\text
 
 This classical model gives rigorous mathematical bounds that specify when the two components should be small. 
 The below image represents the core trade-off that this principle implies; you can find something like it in most ML text books.
-![](/assets/2021-06-15-candidacy-overview/classical-err.jpeg)
+![](/assets/images/2021-06-15-candidacy-overview/classical-err.jpeg)
 
 * If I choose a very small number of parameters $$p$$ relative to the number of samples $$n$$, then my model will perform poorly because it's too simplistic.
 There will be no function $$f_\theta$$ that can classify most of the training data, the training error will be large for any choice of $$\theta$$, even though the generalization error is small.
-![](/assets/2021-06-15-candidacy-overview/samples1.jpeg)
+![](/assets/images/2021-06-15-candidacy-overview/samples1.jpeg)
 
 * There's then a "sweet spot" for $$p$$, where it's large enough to capture the complexity of the data distribution, but not too large to overfit. Here, we have a small training error _and_ a generalization error.
-![](/assets/2021-06-15-candidacy-overview/samples2.jpeg)
+![](/assets/images/2021-06-15-candidacy-overview/samples2.jpeg)
 
 * If I choose $$p$$ to be large, then I can expect _overfitting_ to occur, where the model has a training error near zero, but the generalization error is very large. 
 In this setting, the model performs poorly because it only memorizes the data, without actually learning the underlying trend.
-![](/assets/2021-06-15-candidacy-overview/samples3.jpeg)
+![](/assets/images/2021-06-15-candidacy-overview/samples3.jpeg)
 
 
 
@@ -111,14 +111,14 @@ This idea is referred to _double descent_ and was popularized by [my advisor](ht
 This augments what is referred to as the _classical regime_---where $$p \leq n$$ and choosing the right model is equivalent to choosing the "sweet spot" for $$p$$---with the _interpolation regime_.
 (Interpolation means rougly the same thing as overfitting; it describes methods that bring the training loss to zero.)
 
-![](/assets/2021-06-15-candidacy-overview/double-err.jpeg)
+![](/assets/images/2021-06-15-candidacy-overview/double-err.jpeg)
 
 In the interpolation regime, $$p \gg n$$ and the learning algorithm selects a hypothesis that perfectly fits the training data (i.e. the training error is zero) and is somehow "smooth," which leads to some other kind of "simplicity" that then yields a good generalization error.
 Here's a way to think about it: 
 * When $$p \approx n$$, it's likely that there's exactly one or very few candidate functions $$f_\theta$$ that perfectly fit the data, and we have no reason to expect that this function won't be overly "bumpy" and fail to learn any underlying pattern. (See image (3) above.)
 * Instead, if $$p \gg n$$, then there will be many hypotheses to choose from that have a training error of zero.
 If the algorithm is somehow biased in favor of "smooth" hypotheses, then it's more likely to pick up on the underlying structure of the data.
-![](/assets/2021-06-15-candidacy-overview/samples4.jpeg)
+![](/assets/images/2021-06-15-candidacy-overview/samples4.jpeg)
 
 Of course, this is a very hand-wavy way to describe what's going on.
 Also, it's not always the case that having $$p \gg n$$ leads to a nice situation like the one in image (4).
