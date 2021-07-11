@@ -142,7 +142,7 @@ These papers --- which study over-parameterization in the one of the most simple
 		* **[AC10](https://arxiv.org/abs/1010.0072){:target="_blank"}.** Audibert and Catoni. "Linear regression through PAC-Bayesian truncation." 2010.
 		* **[WF17](https://projecteuclid.org/journals/annals-of-statistics/volume-45/issue-3/Asymptotics-of-empirical-eigenstructure-for-high-dimensional-spiked-covariance/10.1214/16-AOS1487.full){:target="_blank"}.** Wang and Fan. "Asymptotics of empirical eigenstructure for high dimensional spiked covariance." 2017.
 		* **[BHX19](https://arxiv.org/abs/1903.07571){:target="_blank"}. [[OPML#1]]({% post_url 2021-07-05-bhx19 %}){:target="_blank"}.** Belkin, Hsu, and Xu. "Two models of double descent for weak features." 2019. 
-		* **[BLLT19](https://arxiv.org/abs/1906.11300){:target="_blank"}.** Bartlett, Long, Lugosi, and Tsigler. "Benign overfitting in linear regression." 2019.
+		* **[BLLT19](https://arxiv.org/abs/1906.11300){:target="_blank"}. [[OPML#2]]({% post_url 2021-07-11-bllt19 %}){:target="_blank"}.** Bartlett, Long, Lugosi, and Tsigler. "Benign overfitting in linear regression." 2019.
 		* **[HMRT19](https://arxiv.org/abs/1903.08560){:target="_blank"}.** Hastie, Montanari, Rosset, and Tibshirani. "Surprises in high-dimensional ridgeless least squares interpolation." 2019.
 		* **[Mit19](https://arxiv.org/abs/1906.03667){:target="_blank"}.** Mitra. "Understanding overfitting peaks in generalization error: Analytical risk curves for $$\ell_2$$ and $$\ell_1$$ penalized interpolation." 2019.
 		* **[MN19](https://arxiv.org/abs/1912.13421){:target="_blank"}.** Mahdaviyeh and Naulet. "Risk of the least squares minimum norm estimator under the spike covariance model." 2019.
