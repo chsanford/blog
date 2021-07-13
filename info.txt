@@ -1,3 +1,4 @@
 Runs server: "jekyll serve [--drafts]"
 Markdown resources: https://www.markdownguide.org/basic-syntax/
 Jekyll resources: https://jekyllrb.com/docs/
+Staticman app id: 126047
