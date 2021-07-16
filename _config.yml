@@ -23,7 +23,7 @@ author: Clayton Sanford
 email: clayton@cs.columbia.edu
 description: >- # this means to ignore newlines until "baseurl:"
   Random thoughts about machine
-  learning, algorithms, math, politics, living in New York, and more.
+  learning, algorithms, math, running, living in New York, and more.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://blog.claytonsanford.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: chsanford
