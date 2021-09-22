@@ -196,8 +196,8 @@ I'll survey a variety of papers that relate the above theoretical ideas to exper
 * **Smoothness of interpolating neural networks as a function of width:**
 Since one of the core benefits of over-parameterized interpolation models is obtaining very smooth functions $$f_\theta$$, there's an interest in understanding how the number of parameters of a neural network can be translated to the smoothnuess of $$f_\theta$$.
 These papers attempt to establish that relationship.
-	* **[BLN20](https://arxiv.org/abs/2009.14444){:target="_blank"}.** Bubeck, Li, and Nagaraj. "A law of robustness for two-layers neural networks." 2020.
-	* **[BS21](https://arxiv.org/abs/2105.12806){:target="_blank"}.** Bubeck and Sellke. "A universal law of robustness via isoperimetry." 2021.
+	* **[BLN20](https://arxiv.org/abs/2009.14444){:target="_blank"}. [[OPML#7]]({% post_url 2021-09-22-bubeck %}){:target="_blank"}.** Bubeck, Li, and Nagaraj. "A law of robustness for two-layers neural networks." 2020.
+	* **[BS21](https://arxiv.org/abs/2105.12806){:target="_blank"}. [[OPML#7]]({% post_url 2021-09-22-bubeck %}){:target="_blank"}.** Bubeck and Sellke. "A universal law of robustness via isoperimetry." 2021.
 
 ### Posts so far
 You can also track these under the <a href="/tag/candidacy"><code class="highligher-rouge"><nobr>candidacy</nobr></code></a> tag page.
