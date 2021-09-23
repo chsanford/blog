@@ -35,6 +35,10 @@ theme: minima
 plugins:
   - jekyll-feed
 
+staticmanUrl: https://chsanford-blog-staticman.herokuapp.com/v2/entry/chsanford/blog/master/comments
+siteKey: "6LeSD4ccAAAAADR7VUKl6MQPx4Q-jKFO95GnmoJq"
+secret: "RXpHwKuXJ8kpp+1IJtLXq15vJtLTiwsQSPiKyaxXUADLTLXqhTTa6Q7CtlX9Yqku+YFK5wMFb1c4vd5R3dtEc5FfWLJ37kTwKnhOKwFheld2l6jjknO5mUrh3ugdwmDoCt15jRLNv5BnuHIf5D7hIJ0GdT3qvLpun8kjxZlDepA="
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
