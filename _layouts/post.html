@@ -50,8 +50,36 @@ comments: true
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> -->
   <!-- {% endif %} -->
-  <!-- {% include disqus.html %} -->
-  <!-- {% include comments.html %} -->
+  {% include comments.html %}
+
+<!--   <form id="comment-form" method="post" action="https://chsanford-blog-staticman.herokuapp.com/v3/entry/github/chsanford/blog/gh-pages">
+  <fieldset>
+    <label for="comment-form-message">Comment</label>
+    <textarea type="text" rows="3" id="comment-form-message" name="fields[message]"></textarea>
+  </fieldset>
+  <fieldset>
+    <label for="comment-form-name">Name</label>
+    <input type="text" id="comment-form-name" name="fields[name]"/>
+  </fieldset>
+  <fieldset>
+    <label for="comment-form-email">Email address</label>
+    <input type="email" id="comment-form-email" name="fields[email]"/>
+  </fieldset>
+  <fieldset>
+    <label for="comment-form-url">Website</label>
+    <input type="url" id="comment-form-url" name="fields[url]"/>
+  </fieldset>
+  <fieldset class="hidden" style="display: none;">
+    <label for="comment-form-location">Not used. Leave blank if you are a human.</label>
+    <input type="text" id="comment-form-location" name="fields[hidden]" autocomplete="off"/>
+  </fieldset>
+  <fieldset>
+    <button type="submit" id="comment-form-submit">Submit Comment</button>
+  </fieldset>
+</form> -->
+<!-- End new comment form -->
+
+
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
