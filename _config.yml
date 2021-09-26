@@ -36,6 +36,10 @@ plugins:
   - jekyll-feed
 
 
+staticman:
+  moderation: false
+
+
 staticmanUrl: https://chsanford-blog-staticman.herokuapp.com/v2/entry/chsanford/blog/gh-pages/comments
 reCaptcha:
     siteKey: "6LeSD4ccAAAAADR7VUKl6MQPx4Q-jKFO95GnmoJq"

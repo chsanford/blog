@@ -1,4 +1,7 @@
-<form class="js-form form" method="post" action="{{ site.staticmanUrl }}" autocomplete="off">
+
+
+<!-- <form class="js-form form" id="comment-form"> -->
+<form id="comment-form" class="js-form form" method="post" action="{{ site.staticmanUrl }}" autocomplete="off">
   <input type="hidden" name="options[origin]" value="{{ page.url | absolute_url }}">
   <input type="hidden" name="options[parent]" value="{{ page.url | absolute_url }}">
   <input type="hidden" id="comment-replying-to" name="fields[replying_to]" value="">
@@ -8,7 +11,7 @@
 
   <fieldset>
   <div class="textfield">
-    <label for="comment-form-message"><h2>Comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="{{ page.url | absolute_url }}#respond" style="display:none;">(cancel reply)</a></small></h2>
+    <label for="comment-form-message"><h3>Leave a comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="{{ page.url | absolute_url }}#respond" style="display:none;">(cancel reply)</a></small></h3>
       <textarea class="textfield__input" name="fields[message]" type="text" id="comment-form-message"></textarea>
     </label>
   </div>
@@ -16,7 +19,7 @@
 
   <fieldset>
     <div class="textfield">
-      <label for="comment-form-name">Name
+      <label for="comment-form-name">Name:
         <input class="textfield__input" name="fields[name]" type="text" id="comment-form-name" placeholder="Your name"/>
       </label>
     </div>
@@ -24,7 +27,7 @@
 
   <fieldset>
     <div class="textfield">
-      <label for="comment-form-email">E-mail
+      <label for="comment-form-email">Email:
         <input class="textfield__input" name="fields[email]" type="email" id="comment-form-email" placeholder="Your email (optional, used only to send comments.)"/>
       </label>
     </div>
@@ -39,21 +42,25 @@
     </div>
   </fieldset>
 
-    <fieldset>
+<!--     <fieldset>
     <div class="textfield">
       <label for="hp">
         <input class="textfield__input" name="fields[hp]" id="hp" type="text" placeholder="Leave blank">
       </label>
     </div>
-  </fieldset>
+  </fieldset> -->
 
   <fieldset>
 <!--     <div class="g-recaptcha" data-sitekey="{{ site.reCaptcha.siteKey }}" data-theme="dark"></div> -->
     <div id="reCaptcha"></div>
   </fieldset>
 
+  <p class="hidden js-notice">
+    <span class="js-notice-text"></span>
+  </p>
+
   <fieldset>
-    <button class="button" id="comment-form-submit"> <!-- add id for Spinner -->
+    <button class="button" id="comment-form-submit" type=submit> <!-- add id for Spinner -->
       Submit
     </button>
   </fieldset>
@@ -62,8 +69,8 @@
 
 <br>
 <small>
-<p>Comments are held for moderation. There will be a delay before they appear.<br>
-Comments may include <a href="https://commonmark.org/help/" rel="nofollow"><strong>Markdown</strong></a>.<br>
+<!-- <p>Comments are held for moderation. There will be a delay before they appear.<br>
+ --><p>Comments may include <a href="https://commonmark.org/help/" rel="nofollow"><strong>Markdown</strong></a>.<br>
 To share something privately: <a href="mailto:clayton@cs.columbia.edu">Contact me</a>.</p>
 </small>
 
@@ -79,4 +86,76 @@ function showReCaptcha() {
   document.getElementById("reCaptcha").appendChild(node);
 }
 showReCaptcha();
+</script>
+
+
+
+<!-- <script>
+function ajaxpost(){
+  // (A) GET FORM DATA
+  var data = new FormData();
+  data.append("options[origin]", "{{ page.url | absolute_url }}");
+  data.append("options[parent]", "{{ page.url | absolute_url }}");
+  data.append("fields[replying_to]", "");
+  data.append("options[slug]", "{{ page.slug }}");
+  data.append("options[reCaptcha][siteKey]", "{{ site.reCaptcha.siteKey }}");
+  data.append("options[reCaptcha][secret]", "{{ site.reCaptcha.secret }}");
+  data.append("fields[message]", document.getElementById("comment-form-message").value);
+  data.append("fields[name]", document.getElementById("comment-form-name").value);
+  data.append("fields[email]", document.getElementById("comment-form-email").value);
+  data.append("options[subscribe]", document.getElementById("comment-form-reply").value);
+
+ 
+  // (B) AJAX
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", "{{ site.staticmanUrl }}");
+  // What to do when server responds
+  xhr.onload = function(){ console.log(this.response); };
+  xhr.send(data);
+ 
+  // (C) PREVENT HTML FORM SUBMIT
+  return false;
+}
+</script> -->
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script type="text/javascript">
+// Static comments
+(function ($) {
+  var $comments = $('.js-comments');
+
+  $('#comment-form').submit(function () {
+    var form = this;
+
+    $(form).addClass('disabled');
+    $('#comment-form-submit').html('Loading...');
+
+    $.ajax({
+      type: $(this).attr('method'),
+      url: $(this).attr('action'),
+      data: $(this).serialize(),
+      contentType: 'application/x-www-form-urlencoded',
+      success: function (data) {
+        $('#comment-form-submit').html('Submitted');
+        $('.js-form .js-notice').removeClass('notice--danger').addClass('notice--success');
+        showAlert('<strong>Thanks for your comment!</strong> It may take a moment to appear.');
+      },
+      error: function (err) {
+        console.log(err);
+        $('#comment-form-submit').html('Submit');
+        $('.js-form .js-notice').removeClass('notice--success').addClass('notice--danger');
+        showAlert('<strong>Sorry, there was an error with your submission.</strong> Please make sure all required fields have been completed and try again.');
+        $(form).removeClass('disabled');
+      }
+    });
+
+    return false;
+  });
+
+  function showAlert(message) {
+    console.log("hey")
+    $('.js-form .js-notice').removeClass('hidden');
+    $('.js-form .js-notice-text').html(message);
+  }
+})(jQuery);
 </script>

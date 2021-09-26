@@ -1,5 +1,0 @@
-Comments are still in progress! Some helpful links:
-
-- https://mademistakes.com/mastering-jekyll/static-comments/
-- https://staticman.net/docs/
-- https://spinningnumbers.org/a/staticman-heroku.html
