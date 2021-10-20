@@ -37,7 +37,7 @@ Indeed, it simply holds that $$a_i = \langle x, u_i \rangle$$ for all $$i$$; thi
 
 $$\langle x, u_i \rangle = \sum_{j=1}^n a_j \langle u_j, u_i\rangle = \sum_{j=1}^n a_j \delta_{i, j} = a_i.$$
 
-This gives rise to some of nice properties:
+This gives rise to some nice properties:
 * If we let $$a = (a_1, \dots, a_n) \in \mathbb{R}^n$$, then $$\| a\|_2 = \|x \|_2$$.
 * For some other $$x' \in \mathbb{R}^n$$ with $$x'= \sum_{i=1}^n a_i' u_i$$, then $$\langle x, x'\rangle = \langle a, a'\rangle$$.
 * If $$x$$ and $$y$$ are orthogonal, then $$\|x\|_2^2 + \|y\|_2^2 = \|x + y\|_2^2$$. (This is the Pythagorean theorem!)
@@ -96,7 +96,7 @@ For people who like trigonometric functions more than complex-valued functions, 
 
 $$\mathcal{U'} = \{x \mapsto 1\} \cup \{x \mapsto \sqrt{2} \cos(2\pi j x): j \in \mathbb{Z}_+\} \cup\{x \mapsto \sqrt{2} \sin(2\pi j x): j \in \mathbb{Z}_+\}.$$
 
-Thus, we can $$f$$ as:
+Thus, we can define $$f$$ as:
 
 $$f(x) = a_0 + \sum_{j=1}^{\infty}\left(\sqrt{2} a_j \cos(2\pi j x) + \sqrt{2} b_j\sin(2\pi j x) \right)$$
 

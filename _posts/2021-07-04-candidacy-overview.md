@@ -176,8 +176,8 @@ These papers --- which study over-parameterization in the one of the most simple
 * **Training beyond zero training error in boosting:** 
 While not exactly an over-parameterized model, one well-known example of when training a model past the point of perfectly fitting the data can produce better population errors is with the AdaBoost algorithm.
 I'll discuss the original AdaBoost paper and how arguments about the margins of the resulting classifiers suggest that there's more to training ML models than finding the "sweet spot" discussed above and avoiding overfitting.
-	* **[FS97](https://www.sciencedirect.com/science/article/pii/S002200009791504X){:target="_blank"}.** Freund and Schapire. "A decision-theoretic generalization of online learning and an application to boosting." 1997.
-	* **[BFLS98](https://projecteuclid.org/journals/annals-of-statistics/volume-26/issue-5/Boosting-the-margin--a-new-explanation-for-the-effectiveness/10.1214/aos/1024691352.full){:target="_blank"}.** Bartlett, Freund, Lee, and Schapire. "Boosting the margin: a new explanation for the effectiveness of voting methods." 1998.
+	* **[FS97](https://www.sciencedirect.com/science/article/pii/S002200009791504X){:target="_blank"}. [[OPML#8]]({% post_url 2021-10-20-boosting %}){:target="_blank"}.** Freund and Schapire. "A decision-theoretic generalization of online learning and an application to boosting." 1997.
+	* **[BFLS98](https://projecteuclid.org/journals/annals-of-statistics/volume-26/issue-5/Boosting-the-margin--a-new-explanation-for-the-effectiveness/10.1214/aos/1024691352.full){:target="_blank"}. [[OPML#8]]({% post_url 2021-10-20-boosting %}){:target="_blank"}.** Bartlett, Freund, Lee, and Schapire. "Boosting the margin: a new explanation for the effectiveness of voting methods." 1998.
 
 * **Interpolation of arbitary data in neural networks and kernel machines:**
 These papers show that both neural networks and kernel machines can interpret data with arbitrary labels and still generalize, even when some fraction of data are noisy.
@@ -225,7 +225,7 @@ I'll shift to focusing on papers about over-parameterization in the weeks to com
 
 Because research papers are by nature highly technical and because I'm trying to understand them in their full depth, most of these posts will only be accessible to readers with some background in my field.
 However, I also don't want to write posts that'll be useless to anyone who isn't pursuing a PhD in machine learning theory.
-My intention is that readers with some amount of background in ML will be able to read them to understand what kinds of questions learning theorists ask; if someone who's taken an undergraduate-level ML and algorithms course can't udnerstand what I'm writing, then that's on me.
+My intention is that readers with some amount of background in ML will be able to read them to understand what kinds of questions learning theorists ask; if someone who's taken an undergraduate-level ML and algorithms course can't understand what I'm writing, then that's on me.
 I'll periodically give more technical asides into proof techniques that'll only make sense to people who work directly on research in this area, but I'll flag them so they'll be easily skippable.
 
 Maybe this blog will become something more with time... I'm trying to get my feet wet by talking mostly about technical topics that will be primarily of interest to people in my research field, but I may end up branching out to broader subjects that will interest people who aren't theoretical CS weirdos.
