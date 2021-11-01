@@ -168,7 +168,7 @@ These papers --- which study over-parameterization in the one of the most simple
 		* **[MNSBHS20](https://arxiv.org/abs/2005.08054){:target="_blank"}.** Muthukumar, Narang, Subramanian, Belkin, Hsu, and Sahai. "Classification vs regression in overparameterized regimes: Does the loss function matter?" 2020.
 		<!-- * **[WT20](https://arxiv.org/abs/2011.09148){:target="_blank"}.** Wang and Thrampoulidis. "Binary classification of Gaussian mixtures: abundance of support vectors, benign overfitting and regularization." 2020. -->
 		<!-- * **[CGB21](https://arxiv.org/abs/2104.13628){:target="_blank"}.** Cao, Gu, and Belkin. "Risk bounds for over-parameterized maximum margin classification on sub-Gaussian mixtures." 2021. -->
-		* **[CL20](https://arxiv.org/abs/2004.12019){:target="_blank"}.** Chatterji, Long. "Finite-sample Analysis of Interpolating Linear Classifiers in the Overparameterized Regime." 2020.
+		* **[CL20](https://arxiv.org/abs/2004.12019){:target="_blank"}. [[OPML#9]]({% post_url 2021-10-28-cl20 %}){:target="_blank"}.** Chatterji, Long. "Finite-sample Analysis of Interpolating Linear Classifiers in the Overparameterized Regime." 2020.
 	* _Random feaures models:_
 		* **[MM19](https://arxiv.org/abs/1908.05355){:target="_blank"}.** Mei and Montanari. "The generalization error of random features regression: Precise asymptotics and double descent curve." 2019.
 
